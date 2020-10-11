@@ -33,7 +33,7 @@ bibliography: _sections/publications.bib
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-scholar
+#  - jekyll-scholar
 collections:
     - sections
 
