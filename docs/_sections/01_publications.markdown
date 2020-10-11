@@ -20,7 +20,7 @@ My current research activities focus on the energy sector field, spanning from d
 * [Nespoli, L., & Medici, V. (2018). Constrained hierarchical networked optimization for energy markets.  IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe)](https://ieeexplore.ieee.org/document/8571643)
 * [Nespoli, L., Salani, M., & Medici, V. (2018). A rational decentralized generalized Nash equilibrium seeking for energy markets. International Conference on Smart Energy Systems and Technologies, SEST 2018 - Proceedings, 1–6.](https://doi.org/10.1109/SEST.2018.8495809)
 
-### Energy 
+### Demand Side Management and Energy 
 * [Nespoli, L., Giusti, A., Vermes, N., Derboni, M., Rizzoli, A. E., Gambardella, L. M., & Medici, V. (2017). Distributed demand side management using electric boilers. Computer Science - Research and Development, 32(1–2). https://doi.org/10.1007/s00450-016-0315-6](https://link.springer.com/article/10.1007/s00450-016-0315-6)
 * [Medici, V., Salani, M., Nespoli, L., & Giusti, A. (2017). Evaluation Of The Potential Of Electric Storage Using Decentralized Demand Side Management Algorithms. 1–14.](https://www.sciencedirect.com/science/article/pii/S1876610217346064)
 * [Nespoli, L., Medici, V., & Rudel, R. (2015). Grey-Box system identification of building thermal dynamics using only smart meter and air temperature data. 14th International Conference of IBPSA - Building Simulation 2015, BS 2015, Conference Proceedings.](http://www.ibpsa.org/proceedings/BS2015/p3006.pdf)
