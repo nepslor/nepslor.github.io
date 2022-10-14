@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Joined NCCR - Automation"
+date:   2021-01-01 14:54:14 +0200
+categories: research
+---
+
+This year I've joined National Centre of Competence in Research «Dependable, ubiquitous automation» [NCCR - Automation](https://nccr-automation.ch/) as a researcher! I will work on the use of deep neural networks to speed up simulation and control, expecially in the context of energy systems. 
