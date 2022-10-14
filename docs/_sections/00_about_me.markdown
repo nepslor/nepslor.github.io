@@ -10,7 +10,7 @@ categories: jekyll update
 
 <br />
 I live in Lugano and I'm currently a reseacher at both University of Applied Sciences and Arts of Southern Switzerland, [SUPSI](https://www.supsi.ch/home_en.html) and at [Hive Power](https://hivepower.tech/), which I co-founded. 
-I graduated at [PoliMi](https://www.polimi.it/en/) in 2014 in Energy Engineering, with a thesis on CFD. I received my Ph.D. at the École Polytechnique Fédérale de Lausanne, [EPF](https://www.epfl.ch/en/), with the thesis [Model based forecasting for demand response strategies](https://infoscience.epfl.ch/record/265914).
+I graduated at [PoliMi](https://www.polimi.it/en/) in 2014 in Energy Engineering, with a thesis on CFD. I received my Ph.D. at the École Polytechnique Fédérale de Lausanne, [EPFL](https://www.epfl.ch/en/), with the thesis [Model based forecasting for demand response strategies](https://infoscience.epfl.ch/record/265914).
 <br />
 <br />
 <br />

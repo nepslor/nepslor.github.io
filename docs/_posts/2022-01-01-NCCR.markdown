@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Joined NCCR - Automation"
-date:   2021-01-01 14:54:14 +0200
+date:   2022-01-01 14:54:14 +0200
 categories: research
 ---
 
