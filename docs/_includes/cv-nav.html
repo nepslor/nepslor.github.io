@@ -1,0 +1,27 @@
+<nav class="cv-sidebar-nav" aria-label="CV sections">
+  <p class="cv-sidebar-heading">On this site</p>
+  <a
+    href="{{ '/' | relative_url }}"
+    class="cv-nav-link{% if page.url == '/' or page.url == '/index.html' %} is-active{% endif %}"
+    >Home</a
+  >
+  {% assign nav_sections = site.sections | sort: "order" %}
+  {% for s in nav_sections %}
+    {% unless s.hero %}
+      {% if s.title and s.url %}
+        <a
+          href="{{ s.url | relative_url }}"
+          class="cv-nav-link{% if page.url == s.url %} is-active{% endif %}"
+          >{{ s.title | escape }}</a
+        >
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+  {% if site.posts.size > 0 %}
+    <a
+      href="{{ '/blog/' | relative_url }}"
+      class="cv-nav-link{% if page.url contains '/blog' %} is-active{% endif %}"
+      >Blog</a
+    >
+  {% endif %}
+</nav>
