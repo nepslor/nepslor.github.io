@@ -18,10 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: ""
-email: nepslor@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  I'm Lorenzo Nespoli, this site is mainly intended as a place to have an overview of my current activities or an informal CV. Currentyl I'm a researcher at SUPSI and at Hive Power.
+title: "Lorenzo Nespoli"
+email: lorenzo.nespoli@supsi.ch
+description: >-
+  Research scientist: probabilistic ML, forecasting and control, uncertainty quantification
+  for energy and mobility systems. Senior researcher at SUPSI; co-founder of Hive Power.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
@@ -35,7 +36,8 @@ plugins:
   - jekyll-feed
 #  - jekyll-scholar
 collections:
-    - sections
+  sections:
+    output: true
 
 
 # Exclude from processing.

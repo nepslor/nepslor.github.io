@@ -81,6 +81,7 @@ mkdir sections
 in _includes/sections/ create a default.html file with the following content:
 
 {% highlight ruby %}
+{% raw %}
     {% capture bg-image-style %}
     style="background:{% if section.bg-opaque-overlay != nil %} linear-gradient(
         {{ section.bg-opaque-overlay }},
@@ -94,12 +95,13 @@ in _includes/sections/ create a default.html file with the following content:
         {{ section.content }}
         </div>
     </div>
-    </section> 
+    </section>
+{% endraw %}
 {% endhighlight %}
 
-Now create a _layouts dir in docs/, copy there all the default theme _layouts from ~/gems/gems/minima-2.5.1/_layouts/ file. Directly modifying the layouts in that dir will only affect our local preview at localhost. Copying the layouts file in our repo will allow us to modify them while allowing GitHub to automatically deploy them for us in the hosted version of our site. Then modify the home.html in docs/_layouts/ adding the following section under `{%raw%}{{ content }}{%endraw%}`:
+Now create a _layouts dir in docs/, copy there all the default theme _layouts from ~/gems/gems/minima-2.5.1/_layouts/ file. Directly modifying the layouts in that dir will only affect our local preview at localhost. Copying the layouts file in our repo will allow us to modify them while allowing GitHub to automatically deploy them for us in the hosted version of our site. Then modify the home.html in docs/_layouts/ adding the following section under `{% raw %}{{ content }}{% endraw %}`:
 {% highlight ruby %}
-{%raw%}
+{% raw %}
         {% assign sections = site.sections | sort: 'order' %}
         {% for section in sections %}
             {% if section.include != null %}
@@ -108,10 +110,10 @@ Now create a _layouts dir in docs/, copy there all the default theme _layouts fr
                 {% include sections/default.html %}
             {% endif %}
         {% endfor %}
-{%endraw%}
+{% endraw %}
 {% endhighlight %}
 this will cycle through the markdown sections that you'll place in the docs/_section folder
 
 # Additional tip
-The {%raw%}{%...%}{%endraw%} syntax used by Jekyll is part of the Liquid templating engine. Basically, everything in {%raw%}{%...%}{%endraw%} will be parsed and interpreted. For example, quoting the above code directly would result in rendering the _section content directly in the current page. To escape these tags, and so show them literally, you should use the [raw tag](https://stackoverflow.com/questions/22044488/jekyll-code-in-jekyll). 
+Liquid uses curly-brace tags (for example **assign**, **for**, **include**) that Jekyll parses before Markdown. Showing that syntax verbatim in a page requires Liquid’s **raw** tag; see [this Stack Overflow answer](https://stackoverflow.com/questions/22044488/jekyll-code-in-jekyll).
 
